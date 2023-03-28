@@ -8,8 +8,9 @@ pipeline{
         }
         stage("Clean") {
             steps {
-                sh "mvn clean"
-                
+                dir("serenity-web-training") {
+                    sh "mvn clean"
+                }
             }
         }
         stage("Test") {
