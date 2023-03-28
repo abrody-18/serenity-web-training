@@ -1,16 +1,9 @@
 pipeline{
     agent any
     stages {
-        stage("Clean Up") {
-            steps {
-                deleteDir()
-            }
-        }
         stage("Clean") {
             steps {
-                dir("serenity-web-training") {
-                    sh "mvn clean"
-                }
+                sh "mvn clean"
             }
         }
         stage("Test") {
