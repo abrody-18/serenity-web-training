@@ -14,3 +14,11 @@ buildNumber.properties
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse 
+.classpath
+.project
+.settings/
+serenity.properties
+src/.DS_Store
+src/test/.DS_Store
